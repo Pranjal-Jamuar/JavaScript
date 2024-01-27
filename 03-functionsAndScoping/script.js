@@ -46,3 +46,55 @@ function concatName(name) {
 
 let output = concatName("Pranjal")
 console.log(output)
+
+//** Passing functions to another functions
+
+function printVariable(variable) {
+  console.log(variable)
+}
+
+function func(x) {
+  x("Hello World")
+}
+
+func(printVariable)
+
+console.log(printVariable) //? Output of this line is the following description. It basically behaves as a variable but gives the definition of the function.
+
+/*
+  ƒ printVariable(variable) {
+      console.log(variable)
+}
+*/
+
+function sumCallback(a, b, callback) {
+  callback(a + b)
+}
+
+function handleSum(sum) {
+  console.log(sum)
+}
+
+sumCallback(1, 2, handleSum)
+
+//!Exercise
+
+function printName(name, callback) {
+  callback("Hello " + name)
+}
+
+function firstName(myName) {
+  console.log(myName)
+}
+
+printName("Pranjal", firstName)
+
+//* Anonymous Function
+
+function printName(name, callback) {
+  callback("Hello " + name)
+}
+
+printName("Pranjal", function (variable) {
+  console.log(variable)
+})

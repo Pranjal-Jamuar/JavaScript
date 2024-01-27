@@ -172,3 +172,18 @@ function sayHi(name) {
 doStuff(2, 2, "Pranjal")
 
 //?? All about debugging using the developer tools options in the browser by using the breakpoints, errors, call stack
+
+//** Hoisting
+console.log(sum(2, 2)) //? Here the function is called before its definition but still it works coz JS hoists the functions at the top so it actually behaves as if the log statement was called after the function definition.
+
+//? This is called hoisting and it is very helpful in writing complex functions
+
+function sum(a, b) {
+  return a + b
+}
+
+//? But it has an exception as well. Only normal functions are hoisted, variables are never hoisted.
+
+console.log(sumArrow(2, 2))
+
+let sumArrow = (a, b) => a + b //? This gives an error "Cannot access 'sumArrow' before initialization at object" which means that the arrow function is called before its definition coz essentially an arrow function is just a variable definition.

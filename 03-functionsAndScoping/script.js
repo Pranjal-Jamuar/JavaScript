@@ -149,3 +149,26 @@ func(10, function (variable) {
 func(10, variable => console.log(variable)) //? Using Arrow function
 
 //? Both will work the saem but arrow functions reduces line of code and makes it tidier.
+
+//** Call Stack and Stack Trace
+
+function doStuff(a, b, name) {
+  print(sum(a, b))
+  print(sayHi(name))
+}
+
+function print(variable) {
+  console.log(variable)
+}
+
+function sum(a, b) {
+  return a + b
+}
+
+function sayHi(name) {
+  return "Hi " + name
+}
+
+doStuff(2, 2, "Pranjal")
+
+//?? All about debugging using the developer tools options in the browser by using the breakpoints, errors, call stack

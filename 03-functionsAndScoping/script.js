@@ -98,3 +98,54 @@ function printName(name, callback) {
 printName("Pranjal", function (variable) {
   console.log(variable)
 })
+
+//** Arrow Functions
+
+function sum(a, b) {
+  return a + b
+}
+
+let sumArrow = (a, b) => {
+  return a + b
+}
+
+console.log(sumArrow(1, 2))
+
+//! Exercise
+
+let sayNameArrow = name => {
+  return name
+}
+
+console.log(sayNameArrow("Pranjal"))
+
+let sumArrow = (a, b) => a + b //? If we have only one statement in the definition of the function, we don't need the return keyword for the scope (curly braces) brackets for using Arrow Functions.
+
+console.log(sumArrow(2, 2))
+
+//! Exercise
+
+let printHiArrow = name => "Hi " + name
+
+console.log(printHiArrow("Pranjal"))
+
+//**  Arrow functions without any parameters
+
+let hiArrow = () => {
+  console.log("Hi!!")
+}
+
+hiArrow()
+
+function func(x, callback) {
+  callback(x)
+}
+
+func(10, function (variable) {
+  //? Using Anonymous Function
+  console.log(variable)
+})
+
+func(10, variable => console.log(variable)) //? Using Arrow function
+
+//? Both will work the saem but arrow functions reduces line of code and makes it tidier.

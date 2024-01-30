@@ -66,7 +66,7 @@ console.log(a == b) //Gives true but a is number and b is string
 
 //! So,
 
-console.log(a === b) //Gives false which is the correct output
+// console.log(a === b) //Gives false which is the correct output
 
 //* NaN => Not a Number
 
@@ -98,3 +98,54 @@ console.log(a[2][0])
 const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 console.log(a.length)
+
+//** Objects
+
+const person = {
+  name: "Pranjal",
+  age: 24,
+  favoriteNumber: 11,
+  sayHi: function () {
+    console.log("Hi")
+  },
+  sayHi2() {
+    console.log("Hi")
+  },
+}
+
+person.sayHi2()
+
+//! Exercise
+
+const car = {
+  make: "Ford",
+  model: "Mustang",
+  isUsed: true,
+  makeNoise() {
+    console.log("vroom...")
+  },
+}
+
+car.makeNoise()
+console.log(car)
+
+let person = {
+  name: "Pranjal",
+  address: {
+    street: "12345 Main St",
+    city: "Somewhere",
+  },
+}
+console.log(person.address.city)
+
+//! Exercise
+
+let book = {
+  title: "Percy Jackson and the Olympians",
+  author: {
+    name: "Rick Riordan",
+    age: 56,
+  },
+}
+
+console.log(book.author.name)

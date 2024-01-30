@@ -29,7 +29,25 @@ console.log(a)
 
 console.log(a)
 
-//let a = 1 //? it throws an error coz let and const are not hoisted.
+let a = 1 //? it throws an error coz let and const are not hoisted.
 var a = 1 //? 1 is printed here.
 
 console.log(a)
+
+//* Type Coercion
+let a = "1" // String
+
+console.log(typeof parseInt(a)) //? Explicit Type Coercion to integer.
+
+// console.log(a)
+// console.log(typeof a)
+
+//! Functions used for explicit type coercion usually
+
+/*
+  1. parseint() => to convert a string to a number 
+  2. parseFloat() => to convert to a floating point number
+  3. .toString() => to convert to string
+*/
+
+//! Implicit Type Coercion

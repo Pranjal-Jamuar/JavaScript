@@ -50,12 +50,12 @@ console.log(typeof a)
    3. .toString() => to convert to string
  */
 
-// //! Implicit Type Coercion
+//! Implicit Type Coercion
 
-// let a = 1 //number
-// const b = "Hello" //string
+let a = 1 //number
+const b = "Hello" //string
 
-// console.log(a + b) //string
+console.log(a + b) //string
 
 //* == vs ===
 
@@ -66,10 +66,35 @@ console.log(a == b) //Gives true but a is number and b is string
 
 //! So,
 
-// console.log(a === b) //Gives false which is the correct output
+console.log(a === b) //Gives false which is the correct output
 
 //* NaN => Not a Number
 
 const a = parseInt("asdfasdf")
 console.log(a) //?NaN
 console.log(isNaN(a))
+
+//** Arrays
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+a.push(11)
+a.push(["h1", "bye"])
+console.log(a)
+
+//! Exercise
+
+const letters = ["a", "b", "c", "d", "e"]
+console.log(letters[2])
+
+const a = [
+  [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10],
+  [11, 12, 13, 14, 15],
+]
+
+console.log(a[0][3])
+console.log(a[1][2])
+console.log(a[2][0])
+
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(a.length)

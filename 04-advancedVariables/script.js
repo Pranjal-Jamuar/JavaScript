@@ -39,15 +39,20 @@ let a = "1" // String
 
 console.log(typeof parseInt(a)) //? Explicit Type Coercion to integer.
 
-// console.log(a)
-// console.log(typeof a)
+console.log(a)
+console.log(typeof a)
 
 //! Functions used for explicit type coercion usually
 
 /*
-  1. parseint() => to convert a string to a number 
-  2. parseFloat() => to convert to a floating point number
-  3. .toString() => to convert to string
-*/
+   1. parseint() => to convert a string to a number 
+   2. parseFloat() => to convert to a floating point number
+   3. .toString() => to convert to string
+ */
 
 //! Implicit Type Coercion
+
+let a = 1 //number
+const b = "Hello" //string
+
+console.log(a + b) //string

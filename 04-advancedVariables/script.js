@@ -66,7 +66,7 @@ console.log(a == b) //Gives true but a is number and b is string
 
 //! So,
 
-// console.log(a === b) //Gives false which is the correct output
+console.log(a === b) //Gives false which is the correct output
 
 //* NaN => Not a Number
 
@@ -149,3 +149,66 @@ let book = {
 }
 
 console.log(book.author.name)
+
+//** Array Methods
+
+const a = [1, 2, 3, 4, 5]
+
+a.forEach((number, index) => {
+  console.log(number + " " + index)
+})
+
+const newA = a.map(number => {
+  return number * 2
+})
+
+console.log(newA)
+
+const newA = a.filter(number => {
+  return number <= 2
+})
+
+console.log(newA)
+
+const n = a.find(number => {
+  return number > 2
+})
+
+console.log(n)
+
+const isTrue = a.some(number => {
+  return number > 2
+})
+
+console.log(isTrue)
+
+const isTrue = a.every(number => {
+  return number > 0
+})
+
+console.log(isTrue)
+
+const total = a.reduce((sum, number) => {
+  return sum + number
+}, 0)
+
+console.log(total)
+
+//! Exercise
+
+const items = [
+  { price: 10 },
+  { price: 20 },
+  { price: 14 },
+  { price: 6 },
+  { price: 1 },
+]
+
+const total = items.reduce((sum, item) => {
+  return sum + item.price
+}, 0)
+
+console.log(total)
+
+const isTrue = a.includes(2)
+console.log(isTrue)

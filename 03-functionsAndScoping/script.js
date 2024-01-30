@@ -187,3 +187,27 @@ function sum(a, b) {
 console.log(sumArrow(2, 2))
 
 let sumArrow = (a, b) => a + b //? This gives an error "Cannot access 'sumArrow' before initialization at object" which means that the arrow function is called before its definition coz essentially an arrow function is just a variable definition.
+
+//** Scoping
+function sayHi(name) {
+  let result = "Hi " + name //?Here we are using the same variable twice but the code is working fine without any errors, that's because of scoping of the variables.
+
+  //? The result variable inside the sayHi function has a local scope of just inside the function.
+  console.log(result)
+}
+
+let result = "Pranjal" //? Whereas, the result variables is scoped globally. So, having different scopes these two are considered different variables in JS.
+sayHi(result)
+
+//? A variable in the outer scope is accessible throughout the program but the variale inside the inner scope is not accessible from the outer scope
+
+let c = 3
+{
+  let a = 1
+  //console.log(b)  //? This gives error coz we can't see in from the outside of the scope.
+  {
+    let b = 2
+    console.log(a) //? a & c are accessible from the inner scope
+    console.log(c)
+  }
+}

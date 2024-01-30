@@ -45,7 +45,7 @@ console.log(typeof a)
 //! Functions used for explicit type coercion usually
 
 /*
-   1. parseint() => to convert a string to a number 
+   1. parseint() => to convert a string to a number
    2. parseFloat() => to convert to a floating point number
    3. .toString() => to convert to string
  */
@@ -212,3 +212,18 @@ console.log(total)
 
 const isTrue = a.includes(2)
 console.log(isTrue)
+
+//* String Template Literals
+
+let a = "Hello"
+let b = "World"
+
+console.log(a + " " + b)
+console.log(`${a} ${b}`)
+
+//! Exercise
+
+let firstName = "Pranjal"
+let lastName = "Jamuar"
+
+console.log(`${firstName} ${lastName}`)

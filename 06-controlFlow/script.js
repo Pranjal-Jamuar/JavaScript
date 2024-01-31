@@ -133,3 +133,31 @@ while (currentPerson.friend != null) {
   console.log(currentPerson.name)
   currentPerson = currentPerson.friend
 }
+
+//** Recursion
+function addNumbers(number) {
+  if (number <= 0) return 0
+  return number + addNumbers(number - 1)
+}
+
+console.log(addNumbers(10))
+
+//! Exercise
+
+const person = {
+  name: "Pranjal",
+  friend: {
+    name: "Lilly",
+    friend: {
+      name: "Gujju",
+    },
+  },
+}
+
+function printNames(currentPerson) {
+  if (!currentPerson) return
+  console.log(currentPerson.name)
+  printNames(currentPerson.friend)
+}
+
+printNames(person)

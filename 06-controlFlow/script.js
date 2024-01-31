@@ -55,3 +55,46 @@ isUserLoggedIn ? console.log("logged in") : console.log("not logged in")
 const welcomeMessage = isUserLoggedIn ? "Welcome" : "Please Log in"
 
 console.log(welcomeMessage)
+
+//** switch statement
+
+const favoriteAnimal = "dog"
+
+switch (favoriteAnimal) {
+  case "dog":
+    console.log("They are pretty cool")
+    break
+  case "cat":
+    console.log("They are kinda lazy")
+    break
+  case "shark":
+    console.log("That's an interesting choice")
+    break
+  default:
+    console.log("I am unfamiliar with that animal")
+    break
+}
+
+//! Exercise
+
+const number = 3
+
+switch (number) {
+  case 0:
+    console.log("It is zero")
+    break
+  case 1:
+  case 2:
+    console.log("It is small")
+    break
+  case 3:
+  case 4:
+    console.log("It is medium")
+    break
+  case 5:
+    console.log("It is large")
+    break
+  default:
+    console.log("try again")
+    break
+}

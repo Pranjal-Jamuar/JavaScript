@@ -227,3 +227,32 @@ let firstName = "Pranjal"
 let lastName = "Jamuar"
 
 console.log(`${firstName} ${lastName}`)
+
+//* new and this keywords
+
+function createUser(name, age) {
+  return { name: name, age: age, human: true }
+}
+
+// function User(name, age) {
+//   this.name = name
+//   this.age = age
+//   this.human = true
+// }
+
+class User {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+    this.human = true
+  }
+
+  printName() {
+    console.log(this.name)
+  }
+}
+
+const user = new User("Pranjal", 24)
+const user2 = new User("Lilly", 23)
+user.printName()
+user2.printName()

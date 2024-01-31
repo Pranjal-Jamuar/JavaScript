@@ -31,3 +31,27 @@ if (arrayList.length === 0) {
 } else {
   console.log("large")
 }
+
+//** Ternary Operator
+const isUserLoggedIn = false
+let welcomeMessage = ""
+
+if (isUserLoggedIn) {
+  welcomeMessage = "Hello"
+} else {
+  welcomeMessage = "Please log in"
+}
+
+console.log(welcomeMessage)
+
+if (isUserLoggedIn) {
+  console.log("logged in")
+} else {
+  console.log("not logged in")
+}
+
+isUserLoggedIn ? console.log("logged in") : console.log("not logged in")
+
+const welcomeMessage = isUserLoggedIn ? "Welcome" : "Please Log in"
+
+console.log(welcomeMessage)

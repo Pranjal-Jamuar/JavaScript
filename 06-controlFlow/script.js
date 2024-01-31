@@ -110,3 +110,26 @@ for (let i = 0; i <= 10; i++) {
   if (i === 5) break
   console.log(i)
 }
+
+//** while loop
+let i = 0
+while (i < 5) {
+  console.log("hi")
+  i++
+}
+
+const person = {
+  name: "Pranjal",
+  friend: {
+    name: "Lilly",
+    friend: {
+      name: "Gujju",
+    },
+  },
+}
+
+let currentPerson = person
+while (currentPerson.friend != null) {
+  console.log(currentPerson.name)
+  currentPerson = currentPerson.friend
+}

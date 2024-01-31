@@ -161,3 +161,26 @@ function printNames(currentPerson) {
 }
 
 printNames(person)
+
+//** Short Circuit Evaluation
+
+//? Explanation
+printTrue() || printFalse() //?printFalse() will not be run as if it isn't there
+
+function printTrue() {
+  console.log("true")
+  return true
+}
+
+function printFalse() {
+  console.log("false")
+  return false
+}
+//? Working example
+
+function printName(name) {
+  name = name || "Default"
+  console.log(name)
+}
+
+printName("Lilly")
